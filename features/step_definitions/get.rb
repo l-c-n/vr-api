@@ -12,6 +12,6 @@ end
 
 E ('a chave {string} deve ser retornada') do |string|
     expect(@response.has_key?(string)).to eql true
-    puts @response[string][0]
+    puts @response[string].sample
     # puts @response.fetch_values(string)
 end
